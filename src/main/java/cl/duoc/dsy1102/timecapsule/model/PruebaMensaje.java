@@ -8,11 +8,11 @@ public class PruebaMensaje {
     public static void main(String[] args) {
 
         ArrayList<MensajeFuturo> mensajes = new ArrayList<>();
-        mensajes.add(new MensajeFuturo("Guillermo","Texto 1: Nunca abandones tus sueños.",5));
-        mensajes.add(new MensajeFuturo("Guillermo","Texto 2: Comprate un auto.",5));
-        mensajes.add(new MensajeFuturo("Guillermo","Texto 3: Haz más deporte.",5));
-        mensajes.add(new MensajeFuturo("Guillermo","Texto 4: Sal de vacaciones.",5));
-        mensajes.add(new MensajeFuturo("Guillermo","Texto 5: Sigue estudiando.",5));
+        mensajes.add(new MensajeFuturo("Guillermo","Texto 1: Nunca abandones tus sueños.",5, 50));
+        mensajes.add(new MensajeFuturo("Guillermo","Texto 2: Comprate un auto.",5, 50));
+        mensajes.add(new MensajeFuturo("Guillermo","Texto 3: Haz más deporte.",5, 50));
+        mensajes.add(new MensajeFuturo("Guillermo","Texto 4: Sal de vacaciones.",5, 50));
+        mensajes.add(new MensajeFuturo("Guillermo","Texto 5: Sigue estudiando.",5, 50));
 
         for (MensajeFuturo mensaje : mensajes) {
         System.out.println("Autor: " + mensaje.getAutor());

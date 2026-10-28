@@ -4,12 +4,13 @@ public class MensajeFuturo {
     private String autor;
     private String texto;
     private int plazoAnios;
+    private int colPorcentaje;
 
-    public MensajeFuturo(String autor,
-                         String texto, int plazoAnios) {
+    public MensajeFuturo(String autor, String texto, int plazoAnios, int colPorcentaje) {
         this.autor = autor;
         this.texto = texto;
         this.plazoAnios = plazoAnios;
+        this.colPorcentaje = colPorcentaje;
     }
     // A continuación, los getters.
     public String getAutor() {
@@ -22,5 +23,9 @@ public class MensajeFuturo {
 
     public int getPlazoAnios() {
         return plazoAnios;
+    }
+
+    public int getColPorcentaje() {
+        return colPorcentaje;
     }
 }
