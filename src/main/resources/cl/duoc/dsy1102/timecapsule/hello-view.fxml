@@ -6,10 +6,25 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TableColumn?>
 
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
 <VBox xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="cl.duoc.dsy1102.timecapsule.HelloController"
       spacing="14" style="-fx-padding: 10;">
     <Label text="Cápsula del Tiempo" />
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <TextField fx:id="campoAutor" promptText="Tu nombre"/>
+        <TextField fx:id="campoTexto" promptText="Mensaje para el futuro"/>
+        <ComboBox fx:id="campoPlazo"/>
+        <ComboBox fx:id="campoPorcentaje"/>
+        <Button text="Guardar mensaje"
+                onAction="#agregarMensaje"/>
+    </HBox>
+    <Label fx:id="estadoRegistro" text=""/>
+
     <TableView fx:id="tablaMensajes" VBox.vgrow="ALWAYS">
         <columns>
             <TableColumn fx:id="colAutor" text="Autor" />

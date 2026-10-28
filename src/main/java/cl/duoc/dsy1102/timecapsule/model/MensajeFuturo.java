@@ -1,5 +1,7 @@
 package cl.duoc.dsy1102.timecapsule.model;
 
+import javafx.scene.control.TextField;
+
 public class MensajeFuturo {
     private String autor;
     private String texto;
@@ -12,6 +14,8 @@ public class MensajeFuturo {
         this.plazoAnios = plazoAnios;
         this.colPorcentaje = colPorcentaje;
     }
+
+
     // A continuación, los getters.
     public String getAutor() {
         return autor;
